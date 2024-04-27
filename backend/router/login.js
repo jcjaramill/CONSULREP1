@@ -65,7 +65,7 @@ router.post('/auth', async(req, res)=>{
               username: usersDB.username,
               role: usersDB.role
             }
-            jwt.sign(payload, secret_token,{expiresIn:300}, (err, token) => {
+            jwt.sign(payload, secret_token,{expiresIn:1800}, (err, token) => {
               if (err) {
                 res.json({
                   estado: false,
