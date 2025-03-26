@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const router = express.Router();
 const path = require('path');
-const port = 8002;
+const port = 8000;
 const cors = require('cors');
 
 require('./serverDB')
