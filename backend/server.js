@@ -25,7 +25,7 @@ app.use(express.static(path.resolve(__dirname, './public/')));
 const validateRoutes = require('./controllers/validateToken')
 
 app.use('/', require('./router/login'))
-app.use('/repuestos', validateRoutes, require('./router/repuestos'))
+app.use('/repuestos', require('./router/repuestos'))
 app.use('/close_session', validateRoutes, require('./router/close_session'))
 app.use('/buscar_por_pieza', validateRoutes, require('./router/buscar_por_pieza'))
 
